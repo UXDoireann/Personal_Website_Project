@@ -1,0 +1,73 @@
+
+.container{
+    background-color:rgba(224, 142, 135, 0.1);
+}
+  
+h1{
+    margin-bottom:0px;
+    margin-top:1px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+h2{
+    padding-top:0px;
+    padding-bottom:2px;
+    margin-top:0px;
+    margin-bottom:1px;
+}
+
+ul{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+
+.recent_post{
+    background-image: url("/Images/Our Capital.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+ #title{
+     color:rgb(236, 22, 51);
+    }
+   
+.box1{
+    background-image: url("/Images/Kristian Stuuri.PNG");
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:1;
+}
+
+#title1{
+    background-color:rgba(224, 142, 135, 0.5);
+    z-index:2;
+    border-top:2px solid rgb(236, 22, 51);
+}
+
+.box2{
+    background-image: url("/Images/Magali Reus.PNG");
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:1;
+}
+
+#title2{
+    background-color:rgba(224, 142, 135, 0.5);
+    z-index:2;
+    border-top: 2px solid rgb(236, 22, 51);
+}
+
+#sign_up{
+   background-color: rgba(117, 112, 114, 0.2);
+   padding-left:3vw;
+   padding-top:3vh;
+   padding-right:0vw;
+}
+
+#button{
+    margin-left:16vw;
+    margin-top:2vh;
+}
+

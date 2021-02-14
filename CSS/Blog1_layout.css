@@ -1,0 +1,266 @@
+
+@import "Blog_Landing_Page_Boxes.css";
+@import "monolith-stylesheet.css";
+@import "Blog_Post_Boxes.css";
+@import "Blog_Post_Layout.css";
+
+
+@media (max-width:599px){
+.container{
+    display:grid;
+    width:90vw;
+    height:100vh;
+    grid-template-columns:90vw;
+    grid-template-rows: 18v 7vh 65vh 7vh;
+    grid-gap:10px;
+    grid-template-areas:
+    "hd"
+    "ul"
+    "recent"
+    "ft";
+}
+
+.header{
+    grid-area:hd;
+	height:18vh;
+}
+
+h1{
+    font-size:10vw;
+	height:10vh;
+	text-align:center;
+}
+h2{
+    font-size:6vw;
+	text-align:center;
+}
+
+
+ul{
+    grid-area:ul;
+    display:flex;
+    flex-direction:row;
+    width:80vw;
+	justify-content: space-evenly;
+	align-items: baseline;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top:3px;
+	padding-bottom:1px;
+	border-top: 2px solid red;
+}
+	
+li{
+	font-size:3vw;
+    grid-area:ul;
+}
+
+.recent_post{
+    grid-area:recent;
+    height:68vh;
+    width:95vw;
+	display:grid;
+	grid-template-columns:95vw;
+    grid-template-rows: 48vh auto;
+    border-top: 4px solid rgb(236, 22, 51);
+}
+
+#deflated{
+    font-size:2vw;
+    margin-top:65vh;
+    font-style:italic;
+    color:white;
+    text-align:left;
+}
+
+#article_title{
+    background-color:rgba(224, 142, 135, 0.5);
+    border-top:2px solid rgb(236, 22, 51);
+}
+	
+
+
+#sign_up{
+   display:none;
+}
+
+
+.footer{
+    grid-area:ft;
+	width:95vw;
+	padding-left:5px;
+	text-align:center;
+	padding-top:3px;
+	margin-top:2px;
+}
+
+#box1{
+    display:none;
+}
+
+#box2{
+    display:none;
+}
+
+}
+
+@media (min-width:600px) {
+.container{
+    display:grid;
+    width:95vw;
+    height:100vh;
+    margin-left:5vw;
+    grid-template-columns:40vw 60vw;
+    grid-template-rows: 18vh 10vh 15vh 45vh 2vh;
+    grid-gap:10px;
+    grid-template-areas:
+    "hd hd"
+	"ul ul"
+    "recent sign"
+    "recent pp"
+    "ft ft";
+}
+
+.header{
+    grid-area:hd;
+    width:95vw;
+    height:18vh;
+    display:flex;
+    flex-direction:row;
+}
+
+h1{
+    font-size:7vw;
+}
+
+h2{
+    font-size:2vw;
+    display:flex;
+    flex-direction:row;
+    padding-left:5px;
+    padding-top:7vh;
+}
+        
+ul{
+    grid-area:ul;
+    display:flex;
+    flex-direction:row;
+    width:80vw;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:5px;
+    padding-bottom:1px;
+    border-top: 4px solid rgb(236, 22, 51);
+}
+            
+li{
+    font-size:1.5vw;
+    grid-area:ul;
+}
+
+.recent_post{
+    grid-area:recent;
+    width:40vw;
+    height:60vh;
+    display:grid;
+    grid-template-columns:22.5vw auto;
+    grid-template-rows: 60vh;
+    font-size: 2vw;
+    z-index:1
+}
+
+#deflated{
+    font-size:1vw;
+    margin-top:55vh;
+    margin-left:0vw;
+    font-style:italic;
+    color:black;
+    text-align:top;
+    z-index:3;
+}
+
+#article_title{
+    background-color:rgba(224, 142, 135, 0.5);
+    border-left:3px solid rgb(236, 22, 51);
+    font-size:1.5vw;
+    padding-left:2px;
+    padding-top:2px;
+    padding-right:2px;
+    z-index:2;
+    width: 17vw;
+    height:60vh;
+}
+
+.past_posts{
+    grid-area:pp;
+    display:grid;
+    grid-template-columns:22vw 22vw;
+    grid-template-rows: 40vh;
+    grid-template-areas:
+    "box1 box2";
+}
+
+#box1{
+    width:20vw;
+    height:43vh;
+    display:grid;
+    grid-template-columns:20vw;
+    grid-template-rows: 30vh auto;
+    grid-template-areas:
+    "img"
+    "txt1";
+}
+
+#title1{
+    grid-area:txt1;
+}
+
+#box2{
+    width:20vw;
+    height:43vh;
+    display:grid;
+    grid-template-columns:20vw;
+    grid-template-rows: 30vh auto;
+    grid-template-areas:
+    "img"
+    "txt2";
+}
+
+#title2{
+    grid-area:txt2;
+}
+           
+#bello,
+#waiting{
+    font-size:1vw;
+    color:black;
+    font-style:italic;
+    margin-top:30vh;
+    z-index:3;
+}
+
+#sign_up{
+    grid-area:sign;
+    font-size:1vw;
+    display:flex;
+    flex-direction:row;
+    width:39vw;
+}
+
+#title1,
+#title2{
+    font-size:1vw;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:3px;
+}
+        
+.footer{
+    grid-area:ft;
+	width:90vw;
+	height:5vh;
+}
+
+}

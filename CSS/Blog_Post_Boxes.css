@@ -1,0 +1,22 @@
+
+
+
+.profile{
+    background-color:rgba(224, 142, 135, 0.5);
+}
+
+.profile_picture{
+    border-radius:50%;
+    height:15vh;
+    width:10vw;
+    border: 1px solid rgb(236, 22, 51);
+    color:red;
+    background-image: url("/Images/Profile Picture.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#profileinfo{
+    display:none;
+    
+}
