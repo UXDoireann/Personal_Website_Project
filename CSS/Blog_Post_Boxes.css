@@ -11,7 +11,7 @@
     width:10vw;
     border: 1px solid rgb(236, 22, 51);
     color:red;
-    background-image: url("/Images/Profile Picture.jpg");
+    background-image: url("/Images/ProfilePicture.jpg");
     background-size:cover;
     background-repeat:no-repeat;
 }
