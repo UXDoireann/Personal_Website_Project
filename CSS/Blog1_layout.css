@@ -63,6 +63,8 @@ li{
 	grid-template-columns:95vw;
     grid-template-rows: 48vh auto;
     border-top: 4px solid rgb(236, 22, 51);
+    background-image:url("./Images/OurCapital.jpg") ;
+    display:cover;
 }
 
 #deflated{
@@ -168,7 +170,9 @@ li{
     grid-template-columns:22.5vw auto;
     grid-template-rows: 60vh;
     font-size: 2vw;
-    z-index:1
+    z-index:1;
+    background-image:url("/Images/OurCapital.jpg") ;
+    background-size:contain;
 }
 
 #deflated{
@@ -211,6 +215,8 @@ li{
     grid-template-areas:
     "img"
     "txt1";
+    background-image: url("/Images/KristianStuuri.PNG");
+    background-size:contain;
 }
 
 #title1{
